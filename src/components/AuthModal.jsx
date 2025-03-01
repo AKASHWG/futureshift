@@ -39,7 +39,7 @@ const AuthModal = ({ isOpen, onClose }) => {
                     <button className=" text-2xl font-bold text-black hover:text-black transition-transform hover:scale-110" onClick={onClose}>X</button>
                 </div>
                 <div className={'flex justify-center text-black'}>
-                <h2 className="text-2xl bento-title special-font mb-4">Sign In to play!</h2>
+                <h2 className="text-2xl bento-title special-font mb-4 ">Sign In to play!</h2>
                 </div>
 
                 <div className="mb-5">
@@ -50,7 +50,7 @@ const AuthModal = ({ isOpen, onClose }) => {
                         type="text"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
-                        className="w-full border-black border-2 p-2 rounded font-bold bg-pink-500 text-black"
+                        className="w-full border-black border-2 p-2 rounded font-bold bg-gradient-to-tl from-pink-500 to-violet-200 text-black"
                     />
                 </div>
 
@@ -62,7 +62,7 @@ const AuthModal = ({ isOpen, onClose }) => {
                         type="text"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        className="w-full border-black border-2 p-2 rounded font-bold bg-pink-500 text-black"
+                        className="w-full border-black border-2 p-2 rounded font-bold bg-gradient-to-tl from-pink-500 to-violet-200 text-black"
                     />
                 </div>
 
@@ -74,7 +74,7 @@ const AuthModal = ({ isOpen, onClose }) => {
                         type="text"
                         value={walletAddress}
                         onChange={(e) => setWalletAddress(e.target.value)}
-                        className="w-full border-black border-2 p-2 rounded font-bold bg-pink-500 text-black"
+                        className="w-full border-black border-2 p-2 rounded font-bold bg-gradient-to-tl from-pink-500 to-violet-200 text-black"
                     />
                 </div>
 
