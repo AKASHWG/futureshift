@@ -1,10 +1,14 @@
-import React, {useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import {IoClose} from "react-icons/io5";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const AuthModal = ({ isOpen, onClose }) => {
     const [username, setUsername] = useState("");
     const [walletAddress, setWalletAddress] = useState("");
     const [password, setPassword] = useState("");
+
+    const modalRef = useRef(null);
 
     const handleSignIn = () => {
         console.log("Signing in with:", { username, walletAddress, password });
@@ -18,12 +22,19 @@ const AuthModal = ({ isOpen, onClose }) => {
         onClose();
     };
 
+    useEffect(() => {
+        if (isOpen) {
+            gsap.fromTo(modalRef.current, {opacity: 0, scale: 0.7 },
+                { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" });
+        }
+    }, [isOpen]);
+
     if (!isOpen) return null;
 
     return (
 
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70">
-            <div className="bg-gradient-to-tl from-violet-800 to-violet-200 p-6 rounded-lg shadow-lg w-96">
+            <div ref={modalRef} className={"bg-gradient-to-tl from-violet-800 to-violet-200 p-6 rounded-lg shadow-lg w-96"}>
                 <div className={'flex justify-end'}>
                     <button className=" text-2xl font-bold text-black hover:text-black transition-transform hover:scale-110" onClick={onClose}>X</button>
                 </div>
