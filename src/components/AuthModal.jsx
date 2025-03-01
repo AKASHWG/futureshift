@@ -39,7 +39,7 @@ const AuthModal = ({ isOpen, onClose }) => {
                         type="text"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
-                        className="w-full border-black border-2 p-2 rounded font-bold bg-pink-500 text-black/60"
+                        className="w-full border-black border-2 p-2 rounded font-bold bg-pink-500 text-black"
                     />
                 </div>
 
@@ -51,7 +51,7 @@ const AuthModal = ({ isOpen, onClose }) => {
                         type="text"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        className="w-full border-black border-2 p-2 rounded font-bold bg-pink-500 text-black/60"
+                        className="w-full border-black border-2 p-2 rounded font-bold bg-pink-500 text-black"
                     />
                 </div>
 
@@ -63,7 +63,7 @@ const AuthModal = ({ isOpen, onClose }) => {
                         type="text"
                         value={walletAddress}
                         onChange={(e) => setWalletAddress(e.target.value)}
-                        className="w-full border-black border-2 p-2 rounded font-bold bg-pink-500 text-black/60"
+                        className="w-full border-black border-2 p-2 rounded font-bold bg-pink-500 text-black"
                     />
                 </div>
 
