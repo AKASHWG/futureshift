@@ -23,16 +23,16 @@ const AuthModal = ({ isOpen, onClose }) => {
     return (
 
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70">
-            <div className="bg-purple-600 p-6 rounded-lg shadow-lg w-96">
+            <div className="bg-gradient-to-tl from-violet-800 to-violet-200 p-6 rounded-lg shadow-lg w-96">
                 <div className={'flex justify-end'}>
-                    <button className=" text-2xl font-bold text-black/50 hover:text-black transition-transform hover:scale-110" onClick={onClose}>X</button>
+                    <button className=" text-2xl font-bold text-black hover:text-black transition-transform hover:scale-110" onClick={onClose}>X</button>
                 </div>
-                <div className={'flex justify-center text-black/60'}>
+                <div className={'flex justify-center text-black'}>
                 <h2 className="text-2xl bento-title special-font mb-4">Sign In to play!</h2>
                 </div>
 
                 <div className="mb-5">
-                    <div className={'mb-3 text-black/60'}>
+                    <div className={'mb-3 text-black'}>
                     <label className="font-bold special-font uppercase">Username</label>
                     </div>
                     <input
@@ -44,7 +44,7 @@ const AuthModal = ({ isOpen, onClose }) => {
                 </div>
 
                 <div className="mb-5">
-                    <div className={'mb-3 text-black/60'}>
+                    <div className={'mb-3 text-black'}>
                         <label className="font-bold special-font uppercase">Password</label>
                     </div>
                     <input
@@ -56,7 +56,7 @@ const AuthModal = ({ isOpen, onClose }) => {
                 </div>
 
                 <div className="mb-5">
-                    <div className={'mb-3 text-black/60'}>
+                    <div className={'mb-3 text-black'}>
                     <label className="font-bold special-font uppercase">Phantom Wallet Address</label>
                     </div>
                     <input
@@ -81,7 +81,7 @@ const AuthModal = ({ isOpen, onClose }) => {
                 <div className="flex justify-end">
                     <button
                         onClick={handleSignIn}
-                        className="bg-purple-400 text-black/60 uppercase font-bold px-4 py-2 rounded hover:bg-purple-700 hover:text-black transition-transform hover:scale-110"
+                        className="bg-purple-400 text-black uppercase font-bold px-4 py-2 rounded  hover:text-black transition-transform hover:scale-110"
                     >
                         Sign In
                     </button>
