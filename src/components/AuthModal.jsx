@@ -34,7 +34,7 @@ const AuthModal = ({ isOpen, onClose }) => {
     return (
 
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70">
-            <div ref={modalRef} className={"bg-gradient-to-tl from-violet-800 to-violet-200 p-6 rounded-lg shadow-lg w-96"}>
+            <div ref={modalRef} className={"bg-gradient-to-tl from-blue-900 to-violet-200 p-6 rounded-lg shadow-lg w-96"}>
                 <div className={'flex justify-end'}>
                     <button className=" text-2xl font-bold text-black hover:text-black transition-transform hover:scale-110" onClick={onClose}>X</button>
                 </div>
@@ -50,7 +50,7 @@ const AuthModal = ({ isOpen, onClose }) => {
                         type="text"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
-                        className="w-full border-black border-2 p-2 rounded font-bold bg-gradient-to-tl from-pink-500 to-violet-200 text-black"
+                        className="w-full border-black border-2 p-2 rounded font-bold bg-gradient-to-tl from-gray-300 to-violet-200 text-black"
                     />
                 </div>
 
@@ -62,7 +62,7 @@ const AuthModal = ({ isOpen, onClose }) => {
                         type="text"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        className="w-full border-black border-2 p-2 rounded font-bold bg-gradient-to-tl from-pink-500 to-violet-200 text-black"
+                        className="w-full border-black border-2 p-2 rounded font-bold bg-gradient-to-tl from-gray-300 to-violet-200 text-black"
                     />
                 </div>
 
@@ -74,7 +74,7 @@ const AuthModal = ({ isOpen, onClose }) => {
                         type="text"
                         value={walletAddress}
                         onChange={(e) => setWalletAddress(e.target.value)}
-                        className="w-full border-black border-2 p-2 rounded font-bold bg-gradient-to-tl from-pink-500 to-violet-200 text-black"
+                        className="w-full border-black border-2 p-2 rounded font-bold bg-gradient-to-tl from-gray-300 to-violet-200 text-black"
                     />
                 </div>
 
@@ -92,7 +92,7 @@ const AuthModal = ({ isOpen, onClose }) => {
                 <div className="flex justify-end">
                     <button
                         onClick={handleSignIn}
-                        className="bg-purple-400 text-black uppercase font-bold px-4 py-2 rounded  hover:text-black transition-transform hover:scale-110"
+                        className="bg-gradient-to-bl from-violet-200 to-gray-500 text-black uppercase font-bold px-4 py-2 rounded  hover:text-black transition-transform hover:scale-110"
                     >
                         Sign In
                     </button>

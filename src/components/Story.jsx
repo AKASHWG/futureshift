@@ -111,11 +111,7 @@ const FloatingImage = () => {
               opportunities.
             </p>
 
-            <Button
-              id="realm-btn"
-              title="discover prologue"
-              containerClass="mt-5"
-            />
+
           </div>
         </div>
       </div>
